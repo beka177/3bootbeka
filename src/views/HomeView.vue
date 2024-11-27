@@ -43,8 +43,8 @@
     <div class="card h-100">
       <img src="https://api.technodom.kz/f3/api/v1/images/800/800/263653_1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">M1</h5>
-        <p class="card-text">$100</p>
+        <h5 class="card-title">M2</h5>
+        <p class="card-text">$120</p>
         <p class="card-text">MotherBoard</p>
       </div>
       <div class="card-footer">
@@ -61,7 +61,7 @@
       <img src="https://api.technodom.kz/f3/api/v1/images/800/800/263653_1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">M3</h5>
-        <p class="card-text">$100</p>
+        <p class="card-text">$130</p>
         <p class="card-text">MotherBoard</p>
       </div>
       <div class="card-footer">
