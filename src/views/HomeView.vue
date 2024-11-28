@@ -54,7 +54,7 @@ const resetAll = () => {
           <p class="card-text">{{ product.category }}</p>
         </div>
         <div class="card-footer">
-          <button type="button" class="btn btn-outline-info">Detail</button>
+          <button type="button" class="btn btn-outline-info" @click="$router.push(`/detail/${product.id}`)">Detail</button>
           <button type="button" class="btn btn-outline-success mx-4">Cart</button>
         </div>
         <div class="card-footer">
