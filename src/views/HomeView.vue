@@ -1,10 +1,12 @@
 <script setup>
+import { useCartStore } from '@/stores/cart';
 import { useCategoryStore } from '@/stores/category';
 import { useProductStore } from '@/stores/product';
 import { ref } from 'vue';
 
 const productStore = useProductStore();
 const categoryStore = useCategoryStore();
+const cartStore = useCartStore();
 const category = ref(null);
 const searchText = ref("");
 const products = ref([]);
@@ -54,8 +56,8 @@ const resetAll = () => {
           <p class="card-text">{{ product.category }}</p>
         </div>
         <div class="card-footer">
-          <button type="button" class="btn btn-outline-info" @click="$router.push(`/detail/${product.id}`)">Detail</button>
-          <button type="button" class="btn btn-outline-success mx-4">Cart</button>
+          <button type="button" class="btn btn-outline-info" @click="$router.push(`/detail/${product.id}`)">Detail</button> 
+          <button type="button" class="btn btn-outline-success mx-4" @click="cartStore.addToCard(product.id)">Cart</button>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary">Last updated 3 mins ago</small>
