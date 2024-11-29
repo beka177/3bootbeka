@@ -9,9 +9,6 @@ const updateCount = (id, event) => {
     cartStore.updateCountCartById(id, event.target.value);
 }
 
-const proceedToOrder = () => {
-    router.push('/order');
-}
 </script>
 
 <template>
@@ -49,7 +46,7 @@ const proceedToOrder = () => {
         <div class="row">
             <div class="col text-end">
                 <h3 class="text-end">Total: ${{ cartStore.totalSum }}</h3>
-                <button type="button" class="btn me-2 btn-outline-success btn-lg" @click="proceedToOrder"><i class="bi bi-cart-check"></i> Buy</button>
+                <button type="button" class="btn me-2 btn-outline-success btn-lg" @click="router.push(`/order`)"><i class="bi bi-cart-check"></i> Buy</button>
             </div>
         </div>
     </div>

@@ -12,9 +12,7 @@ onMounted(() => {
   }
 });
 
-const viewOrderDetails = (index) => {
-  router.push(`/order-detail/${index}`);
-};
+
 </script>
 
 <template>
@@ -28,7 +26,7 @@ const viewOrderDetails = (index) => {
       <div class="card-body">
         <h5 class="card-title">Order #{{ index + 1 }}</h5>
         <p class="card-text">Total: ${{ order.total }}</p>
-        <button class="btn btn-primary" @click="viewOrderDetails(index)">View Details</button>
+        <button class="btn btn-primary" @click="router.push(`/order-detail/${index}`);">View Details</button>
       </div>
     </div>
   </div>
